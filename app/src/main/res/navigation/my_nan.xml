@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nan"
+    app:startDestination="@id/main_Fragment">
+
+    <fragment
+        android:id="@+id/main_Fragment"
+        android:name="com.example.beltexam2.Main_Fragment"
+        android:label="fragment_main_"
+        tools:layout="@layout/fragment_main_" >
+        <action
+            android:id="@+id/action_main_Fragment_to_API_Fragment"
+            app:destination="@id/API_Fragment" />
+        <action
+            android:id="@+id/action_main_Fragment_to_DB_Fragment"
+            app:destination="@id/DB_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/API_Fragment"
+        android:name="com.example.beltexam2.API_Fragment"
+        android:label="fragment_api"
+        tools:layout="@layout/fragment_api" />
+    <fragment
+        android:id="@+id/DB_Fragment"
+        android:name="com.example.beltexam2.DB_Fragment"
+        android:label="fragment_db"
+        tools:layout="@layout/fragment_db" />
+</navigation>
